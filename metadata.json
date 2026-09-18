@@ -1,0 +1,6 @@
+{
+  "name": "NEXUS // CYBORG - Neural Augmentation Systems",
+  "description": "Next-generation cybernetic augmentations, neural cortex links, and biomechanical chassis enhancements with real-time biometric HUD telemetry and interactive loadout configuration.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,140 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --cyber-cyan: #00f0ff;
+    --cyber-amber: #ffb000;
+    --cyber-crimson: #ff2a5f;
+    --cyber-purple: #9d4edd;
+    --cyber-dark: #07090e;
+    --cyber-surface: #0e121b;
+  }
+}
+
+/* Futuristic Cybernetic Fonts */
+.font-display {
+  font-family: 'Chakra Petch', system-ui, -apple-system, sans-serif;
+}
+
+.font-tech {
+  font-family: 'Rajdhani', system-ui, -apple-system, sans-serif;
+}
+
+.font-mono-tech {
+  font-family: 'JetBrains Mono', monospace;
+}
+
+/* Sci-Fi Angular Chamfer Cut Corners */
+.cyber-chamfer-sm {
+  clip-path: polygon(
+    0 8px,
+    8px 0,
+    100% 0,
+    100% calc(100% - 8px),
+    calc(100% - 8px) 100%,
+    0 100%
+  );
+}
+
+.cyber-chamfer {
+  clip-path: polygon(
+    0 14px,
+    14px 0,
+    100% 0,
+    100% calc(100% - 14px),
+    calc(100% - 14px) 100%,
+    0 100%
+  );
+}
+
+.cyber-chamfer-reverse {
+  clip-path: polygon(
+    0 0,
+    calc(100% - 14px) 0,
+    100% 14px,
+    100% 100%,
+    14px 100%,
+    0 calc(100% - 14px)
+  );
+}
+
+.cyber-chamfer-lg {
+  clip-path: polygon(
+    0 24px,
+    24px 0,
+    100% 0,
+    100% calc(100% - 24px),
+    calc(100% - 24px) 100%,
+    0 100%
+  );
+}
+
+/* Cybernetic Grid & Hologram Patterns */
+.bg-cyber-grid {
+  background-size: 40px 40px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 240, 255, 0.05) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 240, 255, 0.05) 1px, transparent 1px);
+}
+
+.bg-cyber-dots {
+  background-size: 24px 24px;
+  background-image: radial-gradient(rgba(0, 240, 255, 0.15) 1px, transparent 1px);
+}
+
+.bg-cyber-circuit {
+  background-color: #07090e;
+  background-image: radial-gradient(circle at 50% 50%, rgba(0, 240, 255, 0.04) 0%, transparent 60%);
+}
+
+/* Scanline Animation */
+@keyframes scanline {
+  0% {
+    transform: translateY(-100%);
+  }
+  100% {
+    transform: translateY(1000%);
+  }
+}
+
+.animate-scanline {
+  animation: scanline 4s linear infinite;
+}
+
+/* Radar Sweep */
+@keyframes radar-sweep {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.animate-radar {
+  animation: radar-sweep 6s linear infinite;
+}
+
+/* Cyber Glitch Hover Effect */
+.cyber-glitch-hover:hover {
+  text-shadow: 2px 0 #00f0ff, -2px 0 #ff2a5f;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+::-webkit-scrollbar-track {
+  background: #07090e;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #1f293d;
+  border-radius: 2px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #00f0ff;
+}
